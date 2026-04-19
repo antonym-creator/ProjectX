@@ -15,10 +15,11 @@ html, body {
 .app-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  height: 100dvh;
+  height: calc(100vh - 48px);
+  height: calc(100dvh - 48px);
   max-width: 500px;
   margin: 0 auto;
+  background: linear-gradient(to bottom, #3cad3f, #237126);
 }
 
 /* ---- Success Area ---- */
@@ -114,14 +115,8 @@ html, body {
 
 /* ---- Schliessen Button ---- */
 .schliessen-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  flex-shrink: 0;
   padding: 8px 20px 12px;
-  max-width: 500px;
-  margin: 0 auto;
-  z-index: 100;
 }
 
 .schliessen-btn {
