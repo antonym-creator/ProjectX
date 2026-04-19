@@ -213,8 +213,7 @@ html, body {
 /* ---- Bezahlen Button ---- */
 .bezahlen-bar {
   flex-shrink: 0;
-  padding: 4px 16px;
-  padding-bottom: calc(4px + env(safe-area-inset-bottom));
+  padding: 4px 16px 48px;
   background: #f5f5f5;
   max-width: 500px;
   margin: 0 auto;
