@@ -138,9 +138,16 @@ html, body {
 
 /* ---- Weiter Button ---- */
 .weiter-bar {
-  flex-shrink: 0;
-  padding: 12px 24px 48px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 24px 12px;
+  max-width: 500px;
+  margin: 0 auto;
   width: 100%;
+  background: #ffffff;
+  z-index: 100;
 }
 
 .weiter-btn {
