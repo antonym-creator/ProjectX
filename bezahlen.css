@@ -139,8 +139,7 @@ html, body {
 /* ---- Weiter Button ---- */
 .weiter-bar {
   flex-shrink: 0;
-  padding: 12px 24px;
-  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  padding: 12px 24px 48px;
   width: 100%;
 }
 

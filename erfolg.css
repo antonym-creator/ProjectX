@@ -115,8 +115,7 @@ html, body {
 /* ---- Schliessen Button ---- */
 .schliessen-bar {
   flex-shrink: 0;
-  padding: 14px 20px;
-  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  padding: 14px 20px 48px;
 }
 
 .schliessen-btn {
