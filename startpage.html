@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="TWINT">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/appicon/icon.png">
+  <title>TWINT</title>
+  <link rel="stylesheet" href="startpage.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-title">PostFinance TWINT</div>
+      <div class="header-profile">
+        <img src="assets/startscreen/profil.svg" alt="Profil">
+      </div>
+    </header>
+
+    <!-- Scrollable Content -->
+    <main class="content">
+      <!-- Werbung Banner -->
+      <section class="banner">
+        <img src="assets/startscreen/werbung.svg" alt="Werbung">
+      </section>
+
+      <!-- Transaktionen -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-title">Transaktionen</span>
+          <a href="#" class="section-link">Alle anzeigen</a>
+        </div>
+        <div class="transaktionen-card">
+          <img src="assets/startscreen/transaktionen.svg" alt="Transaktionen">
+        </div>
+      </section>
+
+      <!-- Partner-Funktionen -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-title">Partner-Funktionen</span>
+          <a href="#" class="section-link">Alle anzeigen</a>
+        </div>
+        <div class="partner-grid">
+          <div class="partner-item">
+            <div class="partner-icon-box">
+              <img src="assets/startscreen/parkieren.svg" alt="Parkieren">
+            </div>
+            <span class="partner-label">Parkieren</span>
+          </div>
+          <div class="partner-item">
+            <div class="partner-icon-box">
+              <img src="assets/startscreen/spin%20%26%20win.svg" alt="Spin & Win">
+            </div>
+            <span class="partner-label">Spin & Win</span>
+          </div>
+          <div class="partner-item">
+            <div class="partner-icon-box">
+              <img src="assets/startscreen/superdeals.svg" alt="Super Deals">
+            </div>
+            <span class="partner-label">Super Deals</span>
+          </div>
+          <div class="partner-item" onclick="window.location.href='gutscheine.html'">
+            <div class="partner-icon-box">
+              <img src="assets/startscreen/digitale%20gutscheine.svg" alt="Digitale Gutscheine">
+            </div>
+            <span class="partner-label">Digitale Gutscheine</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Senden & Anfordern -->
+      <section class="section">
+        <div class="action-grid">
+          <div class="action-card">
+            <img src="assets/startscreen/senden.svg" alt="Senden">
+          </div>
+          <div class="action-card">
+            <img src="assets/startscreen/Anforden%20%26%20aufteilen.svg" alt="Anfordern & aufteilen">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bezahlen Button -->
+    <div class="bezahlen-bar" onclick="window.location.href='bezahlen.html'">
+      <img src="assets/startscreen/bezahlen.svg" alt="Bezahlen" class="bezahlen-img">
+    </div>
+  </div>
+</body>
+</html>

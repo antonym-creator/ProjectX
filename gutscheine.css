@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  height: 100dvh;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ---- Header ---- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 18px 16px;
+  padding-top: calc(18px + env(safe-area-inset-top));
+  border-bottom: 1px solid #e8e8e8;
+  flex-shrink: 0;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.back-btn:active {
+  opacity: 0.5;
+}
+
+.header-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+.header-spacer {
+  width: 32px;
+}
+
+/* ---- Content ---- */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ---- Choice Cards ---- */
+.choice-grid {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.choice-card {
+  flex: 1;
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px 16px;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  transition: transform 0.1s ease;
+}
+
+.choice-card span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.choice-card:active {
+  transform: scale(0.96);
+}
+
+/* ---- Text Input ---- */
+.text-input {
+  width: 100%;
+  min-height: 160px;
+  border: none;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 16px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-input::placeholder {
+  color: #aaa;
+}
+
+/* ---- Save Button ---- */
+.save-btn {
+  width: 100%;
+  background: #007AFF;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.save-btn:active {
+  background: #005ecb;
+}
+
+/* ---- Image Upload ---- */
+.upload-area {
+  width: 100%;
+  background: #ffffff;
+  border: 2px dashed #ccc;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px 16px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.upload-area span {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.file-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.preview-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.preview-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+
+/* ---- Success ---- */
+.success-icon {
+  margin-top: 60px;
+  margin-bottom: 16px;
+}
+
+.success-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* ---- Current Item Preview ---- */
+.current-item {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.current-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.current-item-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.delete-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.delete-btn span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #FF3B30;
+}
+
+.delete-btn:active {
+  opacity: 0.5;
+}
+
+.current-item-preview {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.current-item-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.current-item-preview .saved-text {
+  font-size: 0.95rem;
+  color: #333;
+  word-break: break-word;
+}
