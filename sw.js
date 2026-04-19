@@ -1,4 +1,4 @@
-const CACHE_NAME = 'twint-pwa-v2';
+const CACHE_NAME = 'twint-pwa-v3';
 const ASSETS = [
   '/',
   '/index.html',
@@ -33,7 +33,15 @@ const ASSETS = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
+    caches.open(CACHE_NAME).then(async (cache) => {
+      for (const asset of ASSETS) {
+        try {
+          await cache.add(asset);
+        } catch (e) {
+          console.warn('Fehler beim Cachen:', asset);
+        }
+      }
+    })
   );
   self.skipWaiting();
 });
@@ -48,7 +56,17 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request))
-  );
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      caches.match('/index.html').then((response) => {
+        return response || fetch(event.request).catch(() => caches.match('/index.html'));
+      })
+    );
+  } else {
+    event.respondWith(
+      caches.match(event.request).then((cached) => {
+        return cached || fetch(event.request);
+      })
+    );
+  }
 });
