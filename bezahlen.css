@@ -138,10 +138,10 @@ html, body {
 /* ---- Weiter Button ---- */
 .weiter-bar {
   position: fixed;
-  bottom: 0;
+  bottom: 16px;
   left: 0;
   right: 0;
-  padding: 12px 24px 20px;
+  padding: 12px 24px 8px;
   max-width: 500px;
   margin: 0 auto;
   width: 100%;

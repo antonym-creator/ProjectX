@@ -152,10 +152,10 @@ html, body {
 /* ---- Okay Button ---- */
 .okay-bar {
   position: fixed;
-  bottom: 0;
+  bottom: 16px;
   left: 0;
   right: 0;
-  padding: 10px 20px 24px;
+  padding: 10px 20px 8px;
   max-width: 500px;
   margin: 0 auto;
   background: #f5f5f5;

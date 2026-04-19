@@ -117,10 +117,10 @@ html, body {
 /* ---- Schliessen Button ---- */
 .schliessen-bar {
   position: fixed;
-  bottom: 0;
+  bottom: 16px;
   left: 0;
   right: 0;
-  padding: 14px 20px 24px;
+  padding: 14px 20px 8px;
   max-width: 500px;
   margin: 0 auto;
   z-index: 100;

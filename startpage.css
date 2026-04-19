@@ -212,10 +212,10 @@ html, body {
 /* ---- Bezahlen Button ---- */
 .bezahlen-bar {
   position: fixed;
-  bottom: 0;
+  bottom: 16px;
   left: 0;
   right: 0;
-  padding: 4px 16px 16px;
+  padding: 4px 16px 8px;
   background: #f5f5f5;
   max-width: 500px;
   margin: 0 auto;
