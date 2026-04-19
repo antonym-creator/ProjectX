@@ -1,4 +1,4 @@
-const CACHE_NAME = 'twint-pwa-v4';
+const CACHE_NAME = 'twint-pwa-v5';
 const ASSETS = [
   './',
   './index.html',
