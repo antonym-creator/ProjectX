@@ -15,7 +15,7 @@ html, body {
 .app-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   height: 100dvh;
   max-width: 500px;
   margin: 0 auto;
@@ -28,6 +28,7 @@ html, body {
   justify-content: space-between;
   background: #ffffff;
   padding: 18px 16px;
+  padding-top: calc(18px + env(safe-area-inset-top));
   flex-shrink: 0;
 }
 
@@ -137,16 +138,10 @@ html, body {
 
 /* ---- Weiter Button ---- */
 .weiter-bar {
-  position: fixed;
-  bottom: 16px;
-  left: 0;
-  right: 0;
-  padding: 12px 24px 8px;
-  max-width: 500px;
-  margin: 0 auto;
+  flex-shrink: 0;
+  padding: 12px 24px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
   width: 100%;
-  background: #ffffff;
-  z-index: 100;
 }
 
 .weiter-btn {
