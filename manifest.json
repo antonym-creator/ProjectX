@@ -2,7 +2,7 @@
   "name": "TWINT",
   "short_name": "TWINT",
   "description": "TWINT App",
-  "start_url": "/index.html",
+  "start_url": "/",
   "id": "/",
   "display": "standalone",
   "background_color": "#f2f2f2",
