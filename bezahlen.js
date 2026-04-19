@@ -84,4 +84,13 @@
     betragDisplay.textContent = 'CHF ' + rawValue;
     betragDisplay.classList.add('has-value');
   }
+
+  // Weiter button
+  document.getElementById('weiterBtn').addEventListener('click', () => {
+    formatFinal();
+    if (rawValue) {
+      localStorage.setItem('bezahlen_betrag', rawValue);
+    }
+    window.location.href = 'bestaetigen.html';
+  });
 })();

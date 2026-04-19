@@ -1,4 +1,9 @@
 (() => {
+  // Request notification permission on first visit
+  if ('Notification' in window && Notification.permission === 'default') {
+    Notification.requestPermission();
+  }
+
   const PIN_LENGTH = 6;
   let pin = '';
 
