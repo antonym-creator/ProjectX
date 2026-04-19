@@ -10,16 +10,17 @@ html, body {
   width: 100%;
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
-  background: linear-gradient(to bottom, #3cad3f, #237126);
+  background: #237126;
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   height: 100dvh;
   max-width: 500px;
   margin: 0 auto;
+  background: linear-gradient(to bottom, #3cad3f, #237126);
 }
 
 /* ---- Success Area ---- */
@@ -32,6 +33,7 @@ html, body {
   padding: 0 40px;
   padding-bottom: 80px;
   gap: 16px;
+  min-height: 0;
 }
 
 .success-gif {
@@ -116,8 +118,7 @@ html, body {
 /* ---- Schliessen Button ---- */
 .schliessen-bar {
   flex-shrink: 0;
-  padding: 14px 20px;
-  padding-bottom: calc(22px + env(safe-area-inset-bottom));
+  padding: 14px 20px 24px;
 }
 
 .schliessen-btn {
