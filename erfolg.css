@@ -8,7 +8,6 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
   background: #237126;
 }
@@ -117,8 +116,14 @@ html, body {
 
 /* ---- Schliessen Button ---- */
 .schliessen-bar {
-  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 14px 20px 24px;
+  max-width: 500px;
+  margin: 0 auto;
+  z-index: 100;
 }
 
 .schliessen-btn {
